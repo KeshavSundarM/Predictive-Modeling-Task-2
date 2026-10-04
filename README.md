@@ -1,16 +1,45 @@
-TASK 2 - PREDICTIVE MODELING USING MACHINE LEARNING
+# Task 2 - Predictive Modeling Using Machine Learning
 
-Project: Loan Default Prediction
+## Loan Default Prediction
 
-HOW TO RUN
-1. Install Python 3.x.
-2. Install required packages:
-   pip install pandas numpy matplotlib scikit-learn
-3. Run:
-   python predictive_modeling.py
+This project demonstrates a complete supervised-learning workflow for predicting loan default.
 
-The script generates a reproducible dataset, handles missing values,
-trains Logistic Regression, Decision Tree and Random Forest models,
-compares Accuracy/Precision/Recall/F1/ROC-AUC, and creates charts.
+### Models
+- Logistic Regression
+- Decision Tree
+- Random Forest
 
-Best model in the supplied experiment: Random Forest
+### Evaluation
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- Confusion Matrix
+- ROC curves
+
+### How to run
+
+Install dependencies:
+
+```bash
+pip install pandas numpy matplotlib scikit-learn
+```
+
+Then run:
+
+```bash
+python predictive_modeling.py
+```
+
+The program automatically creates the reproducible synthetic dataset if
+`loan_default_dataset.csv` is not present. It then creates:
+- `loan_default_dataset.csv`
+- `model_results.csv`
+- `confusion_matrix.png`
+- `roc_curves.png`
+- `model_comparison.png`
+
+The supplied experiment selected **Random Forest** as the best model by F1 Score (0.895).
+
+See [Task_2_Report.md](Task_2_Report.md) for the project report.
